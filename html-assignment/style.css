@@ -19,3 +19,22 @@ header, footer{
 ul li:nth-child(odd){
     background-color: antiquewhite;
 }
+
+nav ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#notes, #index{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: blueviolet;
+    border: dashed;
+}
+
+#notes:hover, #index:hover{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: red;
+    border: dashed;
+}
