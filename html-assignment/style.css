@@ -1,0 +1,21 @@
+body{
+    font-family: Arial, sans-serif;
+    font-size:18px;
+}
+header, footer{
+    background-color: blueviolet;
+}
+
+.site-title{
+    color: pink;
+}
+
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+.square-bullets{
+    list-style: square;
+}
+ul li:nth-child(odd){
+    background-color: antiquewhite;
+}
