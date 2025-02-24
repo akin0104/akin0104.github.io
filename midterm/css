@@ -17,4 +17,11 @@ header image{
     height: auto;
 }
 
-.site
+.site-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #4B0082;/*indigo*/
+    font-size: 2em;
+}
