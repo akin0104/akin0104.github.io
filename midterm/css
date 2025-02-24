@@ -48,3 +48,21 @@ nav ul li a{
     padding: 10px 20px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Article Section*/
+.article-image {
+    float: left;
+    margin-right: 10px;
+    width: 150px
+}
+
+/* form style */
+form{
+    background-color: #ff69B4;
+    padding: 20px;
+    border-radius: 5px;
+}
