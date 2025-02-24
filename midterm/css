@@ -25,3 +25,26 @@ header image{
     color: #4B0082;/*indigo*/
     font-size: 2em;
 }
+
+.site-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: azure;
+    font-size: 2em;
+}
+
+/* Navigation styles */
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: #ff69B4;/* Hot pink*/
+}
+
+nav ul li a{
+    padding: 10px 20px;
+}
+
