@@ -97,17 +97,6 @@ fieldset input{
     margin-top: 5px;
 } */
 
-button{
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #8abbb6;/*slightly darker teal*/
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-button:hover{
-    background-color: #6a9b96; /* Even darker teal for hover */
-}
 
 /* Footer */
 footer{
