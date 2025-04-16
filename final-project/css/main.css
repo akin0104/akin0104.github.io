@@ -1,83 +1,619 @@
-/* ===== IMAGE STYLES ===== */
-/* Logo */
-.logo img {
-    max-width: 150px;
-    height: auto;
-    display: block;
+/* css Reset later */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+  /* Google should be in  Font */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  /* Mobile First (Default) Styles */
+  body {
+    font-family: 'open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /*  changed to white */
+    color:#222;
   }
   
-  /* Hero Banner */
-  .hero-section img {
+  /* Container section  */
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /*    the Header Styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+}
+  .header .logo img {
+    max-width: 150px;
+  }
+  
+  .main-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .main-navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-top: 1rem;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-bar button {
+    padding: 0.5rem;
+    border: none;
+    background-color: #c78c06;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .hero-section{
+    position: relative;
+    width: 100%;
+  }
+    
+ .hero-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+ }
+  .hero-image img {
     width: 100%;
     height: auto;
     display: block;
   }
   
-  /* About Us Image */
+  .hero-overlay {
+    position: absolute;
+    top: 20%; /* Adjust this to control the top margin */
+    left: 0;
+    width: 100%;
+    height: 60%; /* make it Ajust this for the height of the overlay */
+    background-color: rgba(0, 0, 0, 0.6); /* make it Transparent black */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the content horizontally */
+    padding: 2rem;
+    text-align: center; /* center the text */
+  }
+  
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-overlay p {
+    font-size: 1,2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-overlay button {
+    background-color: #c78c06;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+.about-section {
+  background-color: #ffe6aa; /*  soft yellow like your example */
+  width: 80%;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 04px 12px rgba(0, 0, 0, 0.1);
+}
+ 
+.about-image {
+  width: 100px;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  padding: 20px;
+  font-family: sans-serif;
+  color: #000;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
   .company-info img {
     width: 100%;
     height: auto;
-    display: block;
     margin-bottom: 1rem;
   }
   
-  /* Team Member Photos */
-  .team-members img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 1rem;
+  /* -- service Card  Section --*/
+  .Services-card {
+    background-color: #fde6b4; /* butterey yellow background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    font-family: sans-serif;
   }
   
-  /* Service Cards */
-  .service-item img,
-  .Services-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 1rem;
-  }
   
-  /* Vision Section Background Image */
-  .Vision {
-    background: url('../images/vision.jpg') no-repeat center/cover;
-    position: relative;
-  }
   
-  /* Map iframe */
-  .location iframe {
-    width: 100%;
-    height: 300px;
-    border: none;
-  }
+  /* --- Services Card Section --- */
+.Services-card {
+  background-color: #fde6b4; /* buttery yellow background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.Services-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.Services-card h3 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Services-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.service-btn {
+  background-color: #000;  /* black button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-btn:hover {
+  background-color: #333;
+}
+
+/* If you still have a different class for video button, match its style */
+.video-btn {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.video-btn:hover {
+  background-color: #333;
+}
+
+
+/* === MARKETING CARD STYLE === */
+.marketing-card {
+  background-color: #fde6b4; /* same as your About Us section */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 700px;  /* Adjust or increase if needed */
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.marketing-card img {
+  width: 100%;    /* Now forces the image to fill the card's width */
+  height: auto;
+  border-radius: 8px;
+}
+
+.marketing-card h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #000;
+}
+
+.marketing-card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.marketing-card button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* === Video Production Styling === */
+.Services-card.video-production {
+  background-color: #fde6b4; /* buttery yellow like marketing */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.Services-card.video-production img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.Services-card.video-production h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #000;
+}
+
+.Services-card.video-production p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.Services-card.video-production .video-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #000; /* black button */
+  color: #fff;            /* white text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+  /* --- Our Vision Section --- */
+.Vision {
+  position: relative;
+  height: 50vh; /* Half of the screen height */
+  overflow: hidden;
+}
+
+.vision-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.vision-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(60%);
+}
+
+.vision-content h2,
+.vision-content p,
+.vision-content button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  z-index: 2;
+  text-align: center;
+}
+
+.vision-content h2 {
+  top: 20%;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.vision-content p {
+  top: 40%;
+  width: 80%;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.vision-content button {
+  top: 70%;
+  background-color: #007bff;
+  color: white;
+  padding: 14px 28px;
+  border: 3px solid gold;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.vision-content button:hover {
+  background-color: #0056b3;
+  border-color: #ffd700;
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 350px;  /* Increased size of the team member container */
+  text-align: center;
+  background-color: #f5e1a4; /* Butter color */
+  padding: 20px;
+  border-radius: 10px; /* Optional: for rounded corners on the box */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image fits nicely inside the square */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+  margin-bottom: 20px;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin: 10px 0;
+}
+
+/* Brown Line Under the Name */
+.team-member h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.team-member h4::after {
+  content: '';
+  display: block;
+  width: 100%; /* Extend the line to fill the container */
+  margin: 10px 0;
+  border-bottom: 2px solid brown; /* Brown line */
+}
+
+.team-member p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Contact Section */
+.Contact-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* Main Heading */
+.Contact-section h2:first-of-type {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Sub Heading */
+.Contact-section h2:nth-of-type(2) {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+.Contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Labels */
+.Contact-section label {
+  align-self: flex-start;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Inputs and Textarea */
+.Contact-section input[type="text"],
+.Contact-section input[type="email"],
+.Contact-section textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Textarea - styled like others but taller */
+.Contact-section textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.Contact-section button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Contact-section button:hover {
+  background-color: #555;
+}
+
+
+  /* Style the table */
+.hours table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Butter color for header row */
+.hours thead tr {
+  background-color: #fcd34d; /* butter color */
+}
+
+/* Style all cells */
+.hours th, .hours td {
+  border: 1px solid #ccc; /* light gray border */
+  padding: 12px;
+  text-align: left;
+  color: #333;
+}
+
+/* Optional: zebra striping for rows */
+.hours tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
   
-  /* ===== RESPONSIVE ADJUSTMENTS ===== */
+  
+  /* Footer */
+  .site-footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* ----------------------------------- */
+  /* Media Query for 760px and above */
+  /* ----------------------------------- */
   @media (min-width: 760px) {
-    /* About Us Image */
-    .company-info img {
-      width: 40%;
-      float: left;
-      margin-right: 2rem;
-      margin-bottom: 0;
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
     }
   
-    /* Team Photos */
-    .team-members img {
-      width: 200px;
-      height: 200px;
+    .main-navigation ul {
+      justify-content: flex-end;
     }
   
-    /* Service Images */
-    .service-item img,
-    .Services-card img {
-      height: 250px;
+    .service-grid {
+      grid-template-columns: repeat(3, 1fr);
     }
   
-    /* Map */
-    .location iframe {
-      height: 400px;
+    .team-section .team-members {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .company-info {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+  
+    .about-image {
+      flex: 1;
     }
   }
+  
+  @media (min-width: 768px) {
+    .main-navigation ul {
+      justify-content: flex-end;
+    }
+  
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .search-bar {
+      margin-top: 0;
+    }
+  
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .service-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  
+
+  
