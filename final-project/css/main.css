@@ -185,23 +185,21 @@
   margin-bottom: 10px;
 }
 
-.Services-card p {
+.Services-card {
   font-size: 16px;
   line-height: 1.6;
   color: #444;
   margin-bottom: 20px;
 }
-
-.service-btn {
-  background-color: #000;  /* black button */
+.Services-btn {
+  background-color: #000; /* black button */
   color: white;
   padding: 10px 20px;
   font-size: 15px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition:  background-color 0.3s ease;
 }
+
 
 .service-btn:hover {
   background-color: #333;
