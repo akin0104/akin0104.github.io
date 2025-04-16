@@ -218,24 +218,24 @@
   background-color: #333;
  }
 
-
-/* === MARKETING CARD STYLE === */
+/*-- Marketing Card Style -- */
 .marketing-card {
-  background-color: #fde6b4; /* same as your About Us section */
+  background-color: #fde6b4; /* it shold be same as your About us section */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 30px auto;
   width: 90%;
-  max-width: 700px;  /* Adjust or increase if needed */
+  max-width: 700px; /* adjust  or increase if needed */
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
 .marketing-card img {
-  width: 100%;    /* Now forces the image to fill the card's width */
+  width: 100% /*  fill the cards width */;
   height: auto;
   border-radius: 8px;
+
 }
 
 .marketing-card h3 {
@@ -243,26 +243,23 @@
   margin-top: 20px;
   color: #000;
 }
-
 .marketing-card p {
   font-size: 16px;
   color: #333;
   line-height: 1.5;
 }
-
 .marketing-card button {
   margin-top: 15px;
   padding: 10px 20px;
   background-color: #000;
   color: #fff;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-/* === Video Production Styling === */
+/*-- Video Production styling --- */
 .Services-card.video-production {
-  background-color: #fde6b4; /* buttery yellow like marketing */
+  background-color: #fde6b4; /* buttery yellow like marketing also */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -270,8 +267,11 @@
   width: 90%;
   max-width: 700px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Arial,  sans-serif;
+
 }
+
+
 
 .Services-card.video-production img {
   width: 100%;
