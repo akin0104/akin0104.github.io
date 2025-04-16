@@ -509,21 +509,19 @@
   background-color: #fcd34d; /* butter color */
 }
 
-/* Style all cells */
+/* style all cells */
 .hours th, .hours td {
-  border: 1px solid #ccc; /* light gray border */
-  padding: 12px;
+  border: 1px solid #ccc; /*light gray border */
+  padding: 12px; 
   text-align: left;
   color: #333;
 }
-
-/* Optional: zebra striping for rows */
+/* optional: zebra striping for rows */
 .hours tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
 
-  
   
   /* Footer */
   .site-footer {
