@@ -171,20 +171,6 @@
     font-family: sans-serif;
   }
   
-  
-  
-  /* --- Services Card Section --- */
-.Services-card {
-  background-color: #fde6b4; /* buttery yellow background */
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 30px auto;
-  width: 90%;
-  max-width: 700px;
-  text-align: center;
-  font-family: sans-serif;
-}
 
 .Services-card img {
   width: 100%;
