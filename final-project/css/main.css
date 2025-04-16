@@ -199,14 +199,11 @@
   cursor: pointer;
   transition:  background-color 0.3s ease;
 }
-
-
 .service-btn:hover {
   background-color: #333;
 }
-
-/* If you still have a different class for video button, match its style */
-.video-btn {
+ /* if i  stil have a different class for video button, match its style */
+ .video-btn {
   background-color: #000;
   color: white;
   padding: 10px 20px;
@@ -215,7 +212,8 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
+ }
+ 
 
 .video-btn:hover {
   background-color: #333;
