@@ -481,28 +481,25 @@
   height: 150px;
   resize: vertical;
 }
-
-/* Submit Button */
+/* Submit button */ 
 .Contact-section button {
-  padding: 12px 30px;
-  font-size: 16px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+ padding: 12px 30px;
+ font: size 16px;
+ background-color: #333;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
 }
-
-.Contact-section button:hover {
-  background-color: #555;
+ .Contact-section button:hover {
+ background-color: #555;
 }
-
-
-  /* Style the table */
+ 
+/* style the table */
 .hours table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse:  collapse;
   margin-top: 20px;
   font-size: 16px;
 }
